@@ -1,0 +1,5 @@
+/home/ryan/MyProjects/PersonalIM/personal-IM/PersonalIM/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/ryan/MyProjects/PersonalIM/personal-IM/PersonalIM/bin/Debug/PersonalIM.pdb
+/home/ryan/MyProjects/PersonalIM/personal-IM/PersonalIM/bin/Debug/PersonalIM.exe
+/home/ryan/MyProjects/PersonalIM/personal-IM/PersonalIM/obj/Debug/PersonalIM.exe
+/home/ryan/MyProjects/PersonalIM/personal-IM/PersonalIM/obj/Debug/PersonalIM.pdb
