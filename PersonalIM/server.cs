@@ -8,6 +8,7 @@ namespace PersonalIM
 {
     public class Server
     {
+        
         public static void Main(string[] args)
         {
             int maxBytes = 10025;
