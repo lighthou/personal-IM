@@ -1,2 +1,3 @@
 # personal-IM
-Small messaging app over users on a network
+My first C# Application
+Messaging application betweens users and a server over a LAN
