@@ -1,0 +1,8 @@
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\bin\Debug\PersonalIM.exe
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\bin\Debug\PersonalIM.pdb
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.exe
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.pdb
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.client.resources
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.csproj.GenerateResource.Cache

@@ -1,0 +1,10 @@
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.Form1.resources
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.exe
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\obj\Debug\PersonalIM.pdb
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\Server\bin\Debug\PersonalIM.exe
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\Server\bin\Debug\PersonalIM.pdb
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\Server\obj\Debug\PersonalIM.exe
+C:\Users\Ryan\Documents\MyProjects\PersonalIM\personal-IM\PersonalIM\Server\obj\Debug\PersonalIM.pdb
