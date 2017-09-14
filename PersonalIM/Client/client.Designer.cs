@@ -44,13 +44,14 @@ namespace Client
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 166);
             this.textBox1.MinimumSize = new System.Drawing.Size(250, 60);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 60);
+            this.textBox1.Size = new System.Drawing.Size(250, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
@@ -58,7 +59,7 @@ namespace Client
             this.textBox2.Location = new System.Drawing.Point(12, 73);
             this.textBox2.MinimumSize = new System.Drawing.Size(100, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 50);
+            this.textBox2.Size = new System.Drawing.Size(250, 20);
             this.textBox2.TabIndex = 2;
             // 
             // label1
@@ -81,6 +82,7 @@ namespace Client
             this.Controls.Add(this.button1);
             this.Name = "client";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

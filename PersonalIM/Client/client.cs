@@ -23,11 +23,11 @@ namespace Client
         private void Form1_Load(object sender, EventArgs e)
 
         {
-
+            //Output to textbox that program has started
             msg("Client Started");
-
-            clientSocket.Connect("127.0.0.1", 8888);
-
+            //Local IP Address to connect to
+            clientSocket.Connect("192.168.0.19", 8888);
+            //Tell textbox you've connected by setting label
             label1.Text = "Client Socket Program - Server Connected ...";
 
         }
@@ -37,27 +37,27 @@ namespace Client
         private void button1_Click(object sender, EventArgs e)
 
         {
-
+            //Get the stream on ifnormation
             NetworkStream serverStream = clientSocket.GetStream();
-
+            //What you'll output plus a $ based on textBox2
             byte[] outStream = System.Text.Encoding.ASCII.GetBytes(textBox2.Text + "$");
-
+            //Write to the stream making sure the length is appropriate
             serverStream.Write(outStream, 0, outStream.Length);
-
             serverStream.Flush();
+                
 
 
+            byte[] inStream = new byte[8192];
 
-            byte[] inStream = new byte[10025];
+            serverStream.Read(inStream, 0, inStream.Length);
 
-            serverStream.Read(inStream, 0, (int)clientSocket.ReceiveBufferSize);
+            int bytesRead = serverStream.Read(inStream, 0, inStream.Length);
 
-            string returndata = System.Text.Encoding.ASCII.GetString(inStream);
+            string returndata = System.Text.Encoding.ASCII.GetString(inStream, 0 , bytesRead);
 
+            //Message to textbox1 and reset the textbox2
             msg(returndata);
-
             textBox2.Text = "";
-
             textBox2.Focus();
 
         }
@@ -65,11 +65,9 @@ namespace Client
 
 
         public void msg(string mesg)
-
         {
-
+            Console.WriteLine("ok");
             textBox1.Text = textBox1.Text + Environment.NewLine + " >> " + mesg;
-
         }
 
     }

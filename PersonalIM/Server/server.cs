@@ -11,13 +11,13 @@ namespace PersonalIM
         
         public static void Main(string[] args)
         {
-            int maxBytes = 10025;
+            int maxBytes = 8192;
             //Set LocalIP Address
             IPAddress localIp = IPAddress.Parse("127.0.0.1");
             //Init count of requests for the server
             int requestCount = 0;
             //Create the server | TcpListener -> constantly listens for input | 8888 -> Random Port num
-            TcpListener server = new TcpListener(localIp, 8888);
+            TcpListener server = new TcpListener(8888);
             //Create the client | default | TcpClient -> Provides the client connections
             TcpClient client = default(TcpClient);
             //Start the server
@@ -34,14 +34,14 @@ namespace PersonalIM
                 try
                 {
                     //Up Request count and print the request count
-                    requestCount++;
+                    requestCount = requestCount + 1;
                     Console.WriteLine(requestCount);
                     //Set the stream to be coming from the client | NetworkStream -> Provides the underlying stream of data for network access
                     NetworkStream networkStream = client.GetStream();
                     //Set bytes to be read from client 
                     byte[] bytesFrom = new byte[maxBytes];
                     //Read from the stream, the amount of bytes, Read(Byte[], Int32, Int32 (LENGTH?)) TODO
-                    networkStream.Read(bytesFrom, 0, (int) client.ReceiveBufferSize);
+                    networkStream.Read(bytesFrom, 0, bytesFrom.Length);
                     //Reads into a string from the bytes received
                     string dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
                     Console.WriteLine(" >> Data from client - " + dataFromClient);
