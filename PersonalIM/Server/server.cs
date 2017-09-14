@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 
 namespace PersonalIM
@@ -23,9 +24,6 @@ namespace PersonalIM
             //Start the server
             server.Start();
             Console.WriteLine(" >> Server Started");
-            //Accepts a pending connection request
-            client = server.AcceptTcpClient();
-            Console.WriteLine(" >> Accepted Connection");
             //Reinitialize request count?? Example had this dont know why
             requestCount = 0;
 
@@ -33,6 +31,11 @@ namespace PersonalIM
             {
                 try
                 {
+                    //Accepts a pending connection request
+                    client = server.AcceptTcpClient();
+                    Console.WriteLine(" >> Accepted Connection");
+                    var childSocketThread = new Thread(() =>
+                    { 
                     //Up Request count and print the request count
                     requestCount = requestCount + 1;
                     Console.WriteLine(requestCount);
@@ -53,11 +56,14 @@ namespace PersonalIM
                     networkStream.Write(sendBytes, 0, sendBytes.Length);
                     networkStream.Flush();
                     Console.WriteLine(" >> " + serverResponse);
+                    });
+                    childSocketThread.Start();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
                 }
+                
             }
             client.Close();
             server.Stop();
